@@ -3,7 +3,6 @@ package datastructures
 import (
 	"errors"
 	"fmt"
-	"strconv"
 )
 
 var (
@@ -193,33 +192,10 @@ func (l *List) Display() error {
 	}
 
 	current := Head
-	counter := 0
 
-	switch Head.Data.(type) {
-	case string:
-		for current != nil {
-			if counter >= Size-1 {
-				fmt.Print(current.Data)
-				break
-			} else {
-				fmt.Print(current.Data.(string) + "->")
-				current = current.Next
-				counter++
-			}
-		}
-	case int:
-		for current != nil {
-			if counter >= Size-1 {
-				fmt.Print(strconv.Itoa(current.Data.(int)))
-
-				break
-			} else {
-				fmt.Print(strconv.Itoa(current.Data.(int)) + "->")
-				current = current.Next
-				counter++
-			}
-		}
+	for current != nil {
+		fmt.Println(current.Data)
+		current = current.Next
 	}
 	return nil
-
 }
