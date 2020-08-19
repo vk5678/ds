@@ -1,1 +1,1 @@
-Data structures implementation in golang 
+Implementation of DataStructures in Golang
