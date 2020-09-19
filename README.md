@@ -1,1 +1,5 @@
-Implementation of DataStructures in Golang
+#Implementation of DataStructures in Golang
+
+DoubleList
+List
+Stack
