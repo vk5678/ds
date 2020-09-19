@@ -1,23 +1,19 @@
 package main
 
 import (
-	"fmt"
-	dl "gofiles/datastructures/DoubleList"
-	"strconv"
+	dl "ds/datastructures/DoubleList"
+	st "ds/datastructures/stack"
 )
 
 func main() {
-	var doubleList dl.DoublyLinkedList = &dl.List{}
-	for i := 0; i < 10; i++ {
-		doubleList.Insert("m" + strconv.Itoa(i))
-	}
-	value, ok := doubleList.RemoveAtValue("m9")
-	doubleList.RemoveAtValue("m5")
+	var doublelist dl.DoublyLinkedList = &dl.List{}
+	doublelist.Insert(1)
+	doublelist.Insert(3)
+	doublelist.Display()
 
-	if value == nil {
-		fmt.Println(ok, dl.Head.Data, dl.Tail.Data)
-	}
-	if doubleList.IsEmpty() == false {
-		doubleList.Display()
-	}
+	var stack st.Stack = &st.S{}
+	stack.Initialize(5)
+	stack.Push(1)
+	stack.Push(3)
+	stack.Display()
 }
