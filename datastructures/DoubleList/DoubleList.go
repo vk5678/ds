@@ -13,9 +13,9 @@ var (
 	//Size ... Size of the List
 	Size int = 0
 	//ErrListIsEmpty ... error message for an empty List
-	ErrListIsEmpty error = errors.New("The List is Empty")
+	ErrListIsEmpty error = errors.New("the List is Empty")
 	//ErrElementNotFound ... error message for element not found
-	ErrElementNotFound = errors.New("The Node with the given key is not found")
+	ErrElementNotFound = errors.New("the Node with the given key is not found")
 )
 
 //DoublyLinkedList ... interface implementing structure List and its methods
