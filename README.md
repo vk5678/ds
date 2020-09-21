@@ -1,6 +1,4 @@
 Implementation of DataStructures in Golang
 
-DoubleList
-SingleList
-Stack
-Queue
+DoubleList,SingleList,Stack,Queue
+
